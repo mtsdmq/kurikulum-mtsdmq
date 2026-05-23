@@ -9,7 +9,7 @@ import {
 // =====================================================================
 // KONSTANTA SISTEM (TIDAK BISA DIHAPUS ADMIN)
 // =====================================================================
-const KELAS_LIST = ['7A', '7B', '8A', '8B', '9A', '9B'];
+const KELAS_LIST = ['7A', '7B', '7C', '8A', '8B', '9A', '9B'];
 const HARI_LIST = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat'];
 const JAM_LIST = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 
