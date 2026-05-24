@@ -15,23 +15,23 @@ import {
   CalendarDays, BookMarked, CheckSquare, AlertTriangle, UserCheck, UserX, LogIn, LogOut
 } from 'lucide-react';
 
-// =====================================================================
-// 1. RE-INITIALIZE FIREBASE (Mengambil instance auth & db dari config)
-// =====================================================================
-// Catatan: Ganti konfigurasi ini sesuai dengan yang Anda miliki dari Tahap 1
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyXXXXXXXXXXXXXXX",
-  authDomain: "mts-daarul-muqorrobin.firebaseapp.com",
-  projectId: "mts-daarul-muqorrobin",
-  storageBucket: "mts-daarul-muqorrobin.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcdef"
+  apiKey: "AIzaSyC5gr9JknZxHgSGeeuCPQxAGK3CqqsZKI4",
+  authDomain: "mts-daarul-muqorrobin-355e4.firebaseapp.com",
+  projectId: "mts-daarul-muqorrobin-355e4",
+  storageBucket: "mts-daarul-muqorrobin-355e4.firebasestorage.app",
+  messagingSenderId: "753840048150",
+  appId: "1:753840048150:web:b63ff8cd0fde28a1834d37"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
-
 // Trik Aplikasi Sekunder agar Admin bisa membuat user guru tanpa ter-logout
 const secondaryApp = initializeApp(firebaseConfig, "SecondaryAppName");
 const secondaryAuth = getAuth(secondaryApp);
